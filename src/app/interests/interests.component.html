@@ -1,0 +1,14 @@
+<h1>Habilidades que quiero aprender</h1>
+
+<div class="info-box">
+  <label for="category">Categoría:</label>
+  <select id="category" [(ngModel)]="selectedCategory" class="form-control mb-2">
+    <option value="" disabled selected>Selecciona una categoría</option>
+    <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+  </select>
+  
+  <input type="text" id="interest" [(ngModel)]="newInterest" class="form-control mb-2" placeholder="Escribe una habilidad que quieras aprender">
+  
+  <button (click)="addInterest()" class="btn-mic" [disabled]="!selectedCategory || !newInterest">Añadir</button>
+  
+ 
