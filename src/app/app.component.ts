@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { CookiesComponent } from './cookies/cookies.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 @Component({
   selector: 'app-root',

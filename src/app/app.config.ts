@@ -8,8 +8,8 @@ export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(Routes)]
 };*/
 import { Routes } from '@angular/router';
-import { SkillsComponent } from './skills/skills.component';
-import { InterestsComponent } from './interests/interests.component';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { InterestsComponent } from './pages/interests/interests.component';
 
 export const appRoutes: Routes = [
   { path: 'skills', component: SkillsComponent },
