@@ -1,7 +1,7 @@
 <h1>Mis habilidades</h1>
 
 <div class="info-box">
-  <label for="category">Selecciona tus habilidades:</label>
+  <label for="category">Selecciona tus habilidades:</label><br>
   <select id="category" [(ngModel)]="selectedCategory" class="form-control mb-2">
     <option value="" disabled selected>Elige una categoría</option>
     <option *ngFor="let cat of categories" [value]="cat">{{ cat }}</option>
